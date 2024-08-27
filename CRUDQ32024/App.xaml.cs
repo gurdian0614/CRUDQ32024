@@ -1,4 +1,6 @@
-﻿namespace CRUDQ32024
+﻿using CRUDQ32024.Views;
+
+namespace CRUDQ32024
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new NavigationPage(new EmpleadoMain());
         }
     }
 }
